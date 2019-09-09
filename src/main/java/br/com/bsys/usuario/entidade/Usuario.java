@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Usuario {
+public abstract class Usuario {
 
     @Id
     @Column(nullable = false, length = 10)

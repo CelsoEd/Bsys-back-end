@@ -1,5 +1,6 @@
 package br.com.bsys.usuario.dto;
 
+import br.com.bsys.usuario.entidade.Cliente;
 import br.com.bsys.usuario.entidade.Usuario;
 import br.com.bsys.usuario.util.TipoUsuario;
 import br.com.bsys.util.DTO;
@@ -27,7 +28,7 @@ public class UsuarioRequisicaoCadastroDTO implements DTO<Usuario> {
 
     @Override
     public Usuario paraObjeto() {
-        Usuario usuario = new Usuario();
+        Usuario usuario = new Cliente();
         usuario.setNome(this.nome);
         usuario.setEmail(this.email);
         usuario.setSenha(this.senha);
