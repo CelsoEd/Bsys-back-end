@@ -21,7 +21,7 @@ public abstract class Usuario {
     @Column(nullable = false, length = 10)
     private String id;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String nome;
 
     @Column(nullable = false, length = 100, unique = true)

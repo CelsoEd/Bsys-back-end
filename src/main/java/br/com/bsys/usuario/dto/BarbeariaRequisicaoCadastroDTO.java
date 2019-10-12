@@ -1,7 +1,6 @@
 package br.com.bsys.usuario.dto;
 
-import br.com.bsys.usuario.entidade.Cliente;
-import br.com.bsys.usuario.entidade.Endereco;
+import br.com.bsys.usuario.entidade.Barbearia;
 import br.com.bsys.usuario.util.TipoUsuario;
 import br.com.bsys.util.DTO;
 import lombok.Getter;
@@ -12,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
 
 @Getter
 @Setter
-public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
+public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
 
     @NotEmpty
     private String nome;
@@ -26,32 +25,16 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
 
     private TipoUsuario tipoUsuario;
 
-    private String cpf;
-//
-//    private String cep;
-//
-//    private String numero;
-//
-//    private String complemento;
-//
-//    private String uf;
-//
-//    private String cidade;
+    private String cnpj;
 
     @Override
-    public Cliente paraObjeto() {
-        Cliente cliente = new Cliente();
-        Endereco endereco = new Endereco();
-        cliente.setNome(this.nome);
-        cliente.setEmail(this.email);
-        cliente.setSenha(this.senha);
-        cliente.setCpf(this.cpf);
-//        endereco.setCep(this.cep);
-//        endereco.setCidade(this.cidade);
-//        endereco.setComplemento(this.complemento);
-//        endereco.setNumero(this.numero);
-//        endereco.setUf(this.uf);
-//        cliente.setEndereco(endereco);
-        return cliente;
+    public Barbearia paraObjeto() {
+        Barbearia barbearia = new Barbearia();
+        barbearia.setNome(this.nome);
+        barbearia.setEmail(this.email);
+        barbearia.setSenha(this.senha);
+        barbearia.setCnpj(this.cnpj);
+
+        return barbearia;
     }
 }

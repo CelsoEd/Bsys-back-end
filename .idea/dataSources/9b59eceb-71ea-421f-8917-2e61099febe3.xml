@@ -14,10 +14,10 @@
       <ObjectId>32885</ObjectId>
       <StateNumber>706</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>746</IntrospectionStateNumber>
+      <IntrospectionStateNumber>982</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|32906|32908|1
+      <Relations>sequence|table|41468|41470|1
 </Relations>
     </database>
     <database id="4" parent="1" name="postgres">
@@ -109,7 +109,7 @@
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>747</IntrospectionStateNumber>
+      <IntrospectionStateNumber>983</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -169,160 +169,192 @@
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <sequence id="27" parent="19" name="endereco_id_seq">
-      <ObjectId>32906</ObjectId>
-      <StateNumber>729</StateNumber>
+    <sequence id="27" parent="19" name="servicos_id_seq">
+      <ObjectId>41468</ObjectId>
+      <StateNumber>972</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
-    <table id="28" parent="19" name="endereco">
-      <ObjectId>32908</ObjectId>
+    <table id="28" parent="19" name="servicos">
+      <ObjectId>41470</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>729</StateNumber>
+      <StateNumber>977</StateNumber>
     </table>
     <table id="29" parent="19" name="usuario">
-      <ObjectId>32896</ObjectId>
+      <ObjectId>41476</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>744</StateNumber>
+      <StateNumber>978</StateNumber>
     </table>
-    <column id="30" parent="28" name="id">
+    <table id="30" parent="19" name="usuario_servicos">
+      <ObjectId>41484</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>977</StateNumber>
+    </table>
+    <column id="31" parent="28" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>729</StateNumber>
-      <DefaultExpression>nextval(&apos;endereco_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>972</StateNumber>
+      <DefaultExpression>nextval(&apos;servicos_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="31" parent="28" name="cep">
+    <column id="32" parent="28" name="descricao">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>729</StateNumber>
+      <StateNumber>972</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="32" parent="28" name="cidade">
+    <column id="33" parent="28" name="valor">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>729</StateNumber>
-      <TypeId>1043</TypeId>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>972</StateNumber>
+      <TypeId>701</TypeId>
     </column>
-    <column id="33" parent="28" name="complemento">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>729</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="34" parent="28" name="numero">
-      <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>729</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="35" parent="28" name="uf">
-      <Position>6</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>729</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="36" parent="28" name="endereco_pkey">
-      <ObjectId>32915</ObjectId>
-      <StateNumber>729</StateNumber>
+    <index id="34" parent="28" name="servicos_pkey">
+      <ObjectId>41474</ObjectId>
+      <StateNumber>972</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="37" parent="28" name="endereco_pkey">
-      <ObjectId>32916</ObjectId>
-      <StateNumber>729</StateNumber>
+    <key id="35" parent="28" name="servicos_pkey">
+      <ObjectId>41475</ObjectId>
+      <StateNumber>972</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>endereco_pkey</UnderlyingIndexName>
+      <UnderlyingIndexName>servicos_pkey</UnderlyingIndexName>
     </key>
-    <column id="38" parent="29" name="id">
+    <column id="36" parent="29" name="dtype">
       <Position>1</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>973</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="37" parent="29" name="id">
+      <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>710</StateNumber>
+      <StateNumber>973</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="39" parent="29" name="email">
-      <Position>2</Position>
+    <column id="38" parent="29" name="email">
+      <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>710</StateNumber>
+      <StateNumber>973</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="40" parent="29" name="nome">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>710</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="41" parent="29" name="senha">
+    <column id="39" parent="29" name="nome">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>710</StateNumber>
+      <StateNumber>973</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="42" parent="29" name="tipousuario">
+    <column id="40" parent="29" name="senha">
       <Position>5</Position>
-      <DataType>integer|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>710</StateNumber>
+      <StateNumber>973</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="41" parent="29" name="tipousuario">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>973</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="43" parent="29" name="cpf">
-      <Position>6</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>731</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="44" parent="29" name="telefone">
+    <column id="42" parent="29" name="cpf">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>732</StateNumber>
+      <StateNumber>973</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="29" name="endereco_id">
+    <column id="43" parent="29" name="telefone">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>733</StateNumber>
+      <StateNumber>973</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="46" parent="29" name="cnpj">
+    <column id="44" parent="29" name="cnpj">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>744</StateNumber>
+      <StateNumber>973</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="47" parent="29" name="usuario_pkey">
-      <ObjectId>32902</ObjectId>
-      <StateNumber>710</StateNumber>
+    <index id="45" parent="29" name="usuario_pkey">
+      <ObjectId>41482</ObjectId>
+      <StateNumber>973</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="48" parent="29" name="uk_4tdehxj7dh8ghfc68kbwbsbll">
-      <ObjectId>32904</ObjectId>
-      <StateNumber>712</StateNumber>
+    <index id="46" parent="29" name="uk_4tdehxj7dh8ghfc68kbwbsbll">
+      <ObjectId>41487</ObjectId>
+      <StateNumber>975</StateNumber>
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="49" parent="29" name="usuario_pkey">
-      <ObjectId>32903</ObjectId>
-      <StateNumber>710</StateNumber>
+    <key id="47" parent="29" name="usuario_pkey">
+      <ObjectId>41483</ObjectId>
+      <StateNumber>973</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>usuario_pkey</UnderlyingIndexName>
     </key>
-    <key id="50" parent="29" name="uk_4tdehxj7dh8ghfc68kbwbsbll">
-      <ObjectId>32905</ObjectId>
-      <StateNumber>712</StateNumber>
+    <key id="48" parent="29" name="uk_4tdehxj7dh8ghfc68kbwbsbll">
+      <ObjectId>41488</ObjectId>
+      <StateNumber>975</StateNumber>
       <ColNames>email</ColNames>
       <UnderlyingIndexName>uk_4tdehxj7dh8ghfc68kbwbsbll</UnderlyingIndexName>
     </key>
+    <column id="49" parent="30" name="barbearia_id">
+      <Position>1</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>974</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="50" parent="30" name="servicos_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>974</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="51" parent="30" name="uk_ah5ssnrgno26gt8gjtabfp4ow">
+      <ObjectId>41489</ObjectId>
+      <StateNumber>976</StateNumber>
+      <ColNames>servicos_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="30" name="uk_ah5ssnrgno26gt8gjtabfp4ow">
+      <ObjectId>41490</ObjectId>
+      <StateNumber>976</StateNumber>
+      <ColNames>servicos_id</ColNames>
+      <UnderlyingIndexName>uk_ah5ssnrgno26gt8gjtabfp4ow</UnderlyingIndexName>
+    </key>
+    <foreign-key id="53" parent="30" name="fkp4co7ephyk3hjpuhghyq2t9gl">
+      <ObjectId>41496</ObjectId>
+      <StateNumber>978</StateNumber>
+      <ColNames>barbearia_id</ColNames>
+      <RefTableId>41476</RefTableId>
+      <RefColPositions>2</RefColPositions>
+      <RefTableName>usuario</RefTableName>
+      <RefKeyName>usuario_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="54" parent="30" name="fkfn41l6diy18dpqyjy70rwbtnq">
+      <ObjectId>41491</ObjectId>
+      <StateNumber>977</StateNumber>
+      <ColNames>servicos_id</ColNames>
+      <RefTableId>41470</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>servicos</RefTableName>
+      <RefKeyName>servicos_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

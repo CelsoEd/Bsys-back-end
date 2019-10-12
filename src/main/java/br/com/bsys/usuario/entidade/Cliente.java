@@ -22,8 +22,8 @@ public class Cliente extends Usuario {
     @Column
     private String telefone;
 
-    @OneToOne
-    private Endereco endereco;
+//    @OneToOne
+//    private Endereco endereco;
 
 
 }
