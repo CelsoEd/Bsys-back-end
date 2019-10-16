@@ -32,12 +32,12 @@ public class BarbeariaService {
         dao.insere(barbearia);
     }
 
-    public Usuario consultaPorId(String id) throws NotFoundException {
+    public Barbearia consultaPorId(String id) throws NotFoundException {
         return dao.consultaPorId(id).orElseThrow(() -> new NotFoundException(Mensagem.USUARIO_NAO_ENCONTRADO));
     }
 
-    public void novoServico(String id,Servicos servicos) throws NotFoundException {
-        dao.insereServico((Barbearia) consultaPorId(id),servicos);
-    }
+//    public void novoServico(String id,Servicos servicos) throws NotFoundException {
+//        dao.insereServico((Barbearia) consultaPorId(id),servicos);
+//    }
 
 }

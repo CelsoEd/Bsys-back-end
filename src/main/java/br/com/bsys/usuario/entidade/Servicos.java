@@ -23,6 +23,6 @@ public class Servicos {
     @Column
     private Double valor;
 
-//    @ManyToOne
-//    private Barbearia barbearia;
+    @ManyToOne
+    private Barbearia barbearia;
 }

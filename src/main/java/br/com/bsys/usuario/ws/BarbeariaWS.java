@@ -33,18 +33,18 @@ public class BarbeariaWS {
         return Response.created(UriBuilder.fromPath("usuario").build()).build();
     }
 
-    @POST
-    @Path("/servico")
-    public Response novoServico(String id ,@Valid ServicoRequisicaoCadastroDTO servicoRequisicaoCadastroDTO) throws NotFoundException {
-        barbeariaService.novoServico(id,servicoRequisicaoCadastroDTO.paraObjeto());
-        return Response.ok().build();
-    }
+//    @POST
+//    @Path("/servico")
+//    public Response novoServico(String id ,@Valid ServicoRequisicaoCadastroDTO servicoRequisicaoCadastroDTO) throws NotFoundException {
+//        barbeariaService.novoServico(id,servicoRequisicaoCadastroDTO.paraObjeto());
+//        return Response.ok().build();
+//    }
 
     @GET
-    @Path("/consulta")
-    public Response consulta(String id) throws NotFoundException {
-        Usuario usuario = barbeariaService.consultaPorId(id);
-        return Response.ok(usuario).build();
+    @Path("/consulta/{id}")
+    public Response consulta(@PathParam("id") String id) throws NotFoundException {
+        Barbearia barbearia = barbeariaService.consultaPorId(id);
+        return Response.ok(barbearia).build();
     }
 
     @GET
