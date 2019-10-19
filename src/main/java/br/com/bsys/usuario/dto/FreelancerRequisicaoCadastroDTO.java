@@ -1,8 +1,7 @@
 package br.com.bsys.usuario.dto;
 
-import br.com.bsys.usuario.entidade.Barbearia;
 import br.com.bsys.usuario.entidade.Endereco;
-import br.com.bsys.usuario.util.TipoUsuario;
+import br.com.bsys.usuario.entidade.Freelancer;
 import br.com.bsys.util.DTO;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
 
 @Getter
 @Setter
-public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
+public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
 
     @NotEmpty
     private String nome;
@@ -24,7 +23,7 @@ public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
     @NotEmpty
     private String senha;
 
-    private String cnpj;
+    private String cpf;
 
     private String telefone;
 
@@ -39,13 +38,13 @@ public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
     private String cidade;
 
     @Override
-    public Barbearia paraObjeto() {
-        Barbearia barbearia = new Barbearia();
-        barbearia.setNome(this.nome);
-        barbearia.setEmail(this.email);
-        barbearia.setSenha(this.senha);
-        barbearia.setCnpj(this.cnpj);
-        barbearia.setTelefone(this.telefone);
+    public Freelancer paraObjeto() {
+        Freelancer freelancer = new Freelancer();
+        freelancer.setNome(this.nome);
+        freelancer.setEmail(this.email);
+        freelancer.setSenha(this.senha);
+        freelancer.setCpf(this.cpf);
+        freelancer.setTelefone(this.telefone);
 
         Endereco endereco = new Endereco();
         endereco.setCep(this.cep);
@@ -54,8 +53,9 @@ public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
         endereco.setUf(this.uf);
         endereco.setCidade(this.cidade);
 
-        barbearia.setEndereco(endereco);
+        freelancer.setEndereco(endereco);
 
-        return barbearia;
+        return freelancer;
     }
+
 }

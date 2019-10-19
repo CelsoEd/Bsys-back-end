@@ -6,8 +6,6 @@ import br.com.bsys.util.exception.NotFoundException;
 
 
 import javax.ejb.EJB;
-import javax.inject.Inject;
-import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -17,7 +15,7 @@ import javax.ws.rs.core.Response;
 @Consumes(MediaType.APPLICATION_JSON)
 public class ServicoWS {
 
-    @Inject
+    @EJB
     private ServicoService servicoService;
 
     @POST
@@ -27,6 +25,15 @@ public class ServicoWS {
             throws NotFoundException {
 
         servicoService.novoServicoBarbearia(id,servicoRequisicaoCadastroDTO.paraObjeto());
+        return Response.ok().build();
+    }
+    @POST
+    @Path("servico-freelancer/{id}")
+    public Response novoServicoFreelancer(
+            @PathParam("id") String id, ServicoRequisicaoCadastroDTO servicoRequisicaoCadastroDTO)
+            throws NotFoundException {
+
+        servicoService.novoServicoFreelancer(id,servicoRequisicaoCadastroDTO.paraObjeto());
         return Response.ok().build();
     }
 }
