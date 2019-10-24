@@ -5,6 +5,7 @@ import br.com.bsys.usuario.entidade.Servicos;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.Optional;
 
 public class ServicoDAOImp implements ServicoDAO {
 
@@ -14,6 +15,11 @@ public class ServicoDAOImp implements ServicoDAO {
     @Override
     public void servicoBarbearia(Servicos servicos) {
         entityManager.persist(servicos);
+    }
+
+    @Override
+    public Optional<Servicos> buscaPorId(int id) {
+        return  Optional.ofNullable(entityManager.find(Servicos.class, id));
     }
 
     @Override

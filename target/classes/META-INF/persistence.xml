@@ -12,6 +12,7 @@
         <class>br.com.bsys.usuario.entidade.Barbearia</class>
         <class>br.com.bsys.usuario.entidade.Freelancer</class>
         <class>br.com.bsys.usuario.entidade.Servicos</class>
+        <class>br.com.bsys.usuario.entidade.Agendamento</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>

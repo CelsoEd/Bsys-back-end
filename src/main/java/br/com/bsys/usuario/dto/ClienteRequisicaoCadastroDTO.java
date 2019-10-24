@@ -27,16 +27,18 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
     private TipoUsuario tipoUsuario;
 
     private String cpf;
-//
-//    private String cep;
-//
-//    private String numero;
-//
-//    private String complemento;
-//
-//    private String uf;
-//
-//    private String cidade;
+
+    private String telefone;
+
+    private String cep;
+
+    private String numero;
+
+    private String complemento;
+
+    private String uf;
+
+    private String cidade;
 
     @Override
     public Cliente paraObjeto() {
@@ -46,12 +48,13 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
         cliente.setEmail(this.email);
         cliente.setSenha(this.senha);
         cliente.setCpf(this.cpf);
-//        endereco.setCep(this.cep);
-//        endereco.setCidade(this.cidade);
-//        endereco.setComplemento(this.complemento);
-//        endereco.setNumero(this.numero);
-//        endereco.setUf(this.uf);
-//        cliente.setEndereco(endereco);
+        cliente.setTelefone(this.telefone);
+        endereco.setCep(this.cep);
+        endereco.setCidade(this.cidade);
+        endereco.setComplemento(this.complemento);
+        endereco.setNumero(this.numero);
+        endereco.setUf(this.uf);
+        cliente.setEndereco(endereco);
         return cliente;
     }
 }

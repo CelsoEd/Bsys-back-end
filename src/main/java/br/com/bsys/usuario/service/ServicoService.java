@@ -4,6 +4,7 @@ import br.com.bsys.usuario.dao.ServicoDAO;
 import br.com.bsys.usuario.entidade.Barbearia;
 import br.com.bsys.usuario.entidade.Freelancer;
 import br.com.bsys.usuario.entidade.Servicos;
+import br.com.bsys.util.Mensagem;
 import br.com.bsys.util.exception.NotFoundException;
 
 import javax.ejb.EJB;
@@ -21,6 +22,10 @@ public class ServicoService {
 
     @EJB
     private FreelancerService freelancerService;
+
+    public Servicos consultaPorId(int id) throws NotFoundException{
+        return servicoDAO.buscaPorId(id).orElseThrow(() -> new NotFoundException(Mensagem.SERVICO_NAO_CADASTRADO));
+    }
 
     public void novoServicoBarbearia(String id, Servicos servico) throws NotFoundException {
         Barbearia barbearia = barbeariaService.consultaPorId(id);

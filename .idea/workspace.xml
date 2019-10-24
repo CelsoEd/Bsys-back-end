@@ -7,28 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d4e27a7-8bc2-4e22-91d0-00648ef79271" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/FreelancerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/FreelancerDAOImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/FreelancerRequisicaoCadastroDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/FreelancerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/FreelancerWS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/AgendamentoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/AgendamentoDAOImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/AgendamentoRequisicaoCadastroDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Agendamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AgendamentoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/util/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/AgendamentoWS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9b59eceb-71ea-421f-8917-2e61099febe3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9b59eceb-71ea-421f-8917-2e61099febe3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9b59eceb-71ea-421f-8917-2e61099febe3/storage_v2/_src_/database/BSys.K0cfAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9b59eceb-71ea-421f-8917-2e61099febe3/storage_v2/_src_/database/BSys.K0cfAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ServicoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ServicoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ClienteDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ClienteDAOImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/BarbeariaRequisicaoCadastroDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/BarbeariaRequisicaoCadastroDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Freelancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Freelancer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Servicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Servicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ServicoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ServicoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ServicoWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ServicoWS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/entidade/Freelancer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/entidade/Freelancer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/entidade/Servicos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/entidade/Servicos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bsys/util/Mensagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bsys/util/Mensagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dao/ServicoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dao/ServicoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dao/imp/ClienteDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dao/imp/ClienteDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dao/imp/ServicoDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dao/imp/ServicoDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/entidade/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/entidade/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/service/ServicoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/service/ServicoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/ws/ServicoWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/usuario/ws/ServicoWS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/entidade/Freelancer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/entidade/Freelancer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/entidade/Servicos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/entidade/Servicos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/util/Mensagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/api/WEB-INF/classes/br/com/bsys/util/Mensagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dao/ServicoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dao/ServicoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dao/imp/ClienteDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dao/imp/ClienteDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dao/imp/ServicoDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dao/imp/ServicoDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/entidade/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/entidade/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/service/ServicoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/service/ServicoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/ws/ServicoWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/usuario/ws/ServicoWS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/bsys/util/Mensagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/bsys/util/Mensagem.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,18 +107,49 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/BarbeariaWS.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="58">
+                    <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="37" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAOImp.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="149">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/barbearia">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+              <filtering>
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
@@ -114,7 +157,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/servicos">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
+            <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
               <filtering>
                 <filter text="" />
               </filtering>
@@ -123,75 +166,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/freelancer">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ServicoDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/AgendamentoWS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/FreelancerDAOImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#67#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/usuario">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/usuario_servicos">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-              <filtering>
-                <filter text="" />
-              </filtering>
-              <column-attributes>
-                <column name="ctid" enabled="false" position="-1" />
-              </column-attributes>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ClienteDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="239">
+              <caret line="22" column="106" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,10 +178,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/FreelancerDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ClienteWS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="276">
+              <caret line="34" column="58" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/agendamento">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/cliente">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/AgendamentoRequisicaoCadastroDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/BarbeariaRequisicaoCadastroDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="695">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Agendamento.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,10 +254,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="AnnotationType" />
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -243,14 +281,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/interceptor/interceptor/Autorizacao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/util/TipoUsuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/interceptor/Autorizacao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AplicationScoped.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/Sessao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AutenticacaoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/UsuarioRespostaAutenticacaoDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/UsuarioRequisicaoLoginDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/util/DTO.java" />
         <option value="$PROJECT_DIR$/src/main/resouces/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/AplicacaoRest.java" />
@@ -263,37 +293,45 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/UsuarioRequisicaoCadastroDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/BarbeariaDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ClienteService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ClienteWS.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ClienteDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Cliente.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/bsys/usuario/dao/imp/BarbeariaDAOImpTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/TokenService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ClienteDAOImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/UsuarioDAOImp.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Endereco.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Usuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Barbearia.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/ServicoRequisicaoCadastroDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/BarbeariaDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/BarbeariaDAOImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/BarbeariaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/BarbeariaWS.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Servicos.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Freelancer.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/FreelanceDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/FreelanceDAOImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/FreelancerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ServicoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ServicoWS.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/FreelancerWS.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/FreelancerRequisicaoCadastroDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/BarbeariaRequisicaoCadastroDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAOImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/util/Status.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Barbearia.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/AgendamentoDAOImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/AgendamentoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ServicoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAOImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/util/Mensagem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ServicoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AgendamentoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ClienteWS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Agendamento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ClienteDAOImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/AgendamentoWS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/AgendamentoRequisicaoCadastroDTO.java" />
       </list>
     </option>
   </component>
@@ -315,9 +353,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1592" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-42" />
+    <option name="y" value="-26" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
@@ -326,6 +364,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -386,8 +425,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bsys" type="462c0819:PsiDirectoryNode" />
               <item name="usuario" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="imp" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bsys" type="b2602c69:ProjectViewProjectNode" />
@@ -396,7 +434,38 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bsys" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+              <item name="entidade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bsys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bsys" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bsys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bsys" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bsys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bsys" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bsys" type="b2602c69:ProjectViewProjectNode" />
@@ -417,7 +486,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -447,11 +515,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="br.com.bsys.usuario.dao.imp" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.bsys.usuario.dto" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.bsys.usuario.dto" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.bsys.usuario.dto" />
@@ -651,17 +719,20 @@
       <workItem from="1571198121452" duration="4873000" />
       <workItem from="1571446779590" duration="441000" />
       <workItem from="1571447994514" duration="1017000" />
-      <workItem from="1571457876597" duration="4222000" />
+      <workItem from="1571457876597" duration="4888000" />
+      <workItem from="1571522529485" duration="3858000" />
+      <workItem from="1571881361132" duration="6990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90123000" />
+    <option name="totallyTimeSpent" value="101637000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32133675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24550128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -673,12 +744,12 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32974428" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3270525" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49871466" weight="0.38492596" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49871466" weight="0.65948856" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.36204576" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4347241" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4347241" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50064266" side_tool="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -689,7 +760,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.15295629" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.33676094" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.33676094" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" weight="0.32969153" />
@@ -757,6 +828,36 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AgendamentoService.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/AgendamentoRequisicaoCadastroDTO.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/AgendamentoWS.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AgendamentoService.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/AgendamentoRequisicaoCadastroDTO.java</url>
+          <line>11</line>
+          <properties field="dataHora" class="br.com.bsys.usuario.dto.AgendamentoRequisicaoCadastroDTO" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -772,136 +873,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://F:/JDK/jdk-12.0.1/lib/src.zip!/java.logging/java/util/logging/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="431" selection-start-line="431" selection-end-line="431" />
-          <folding>
-            <element signature="e#15107#15108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/JDK/jdk-12.0.1/lib/src.zip!/java.base/java/lang/ThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-          <folding>
-            <element signature="e#8486#8487#0" expanded="true" />
-            <element signature="e#8523#8524#0" expanded="true" />
-            <element signature="e#12341#12342#0" expanded="true" />
-            <element signature="e#12399#12400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/JDK/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-          <folding>
-            <element signature="e#4824#4825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/JDK/jdk-12.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="520" selection-start-line="520" selection-end-line="520" />
-          <folding>
-            <element signature="e#21034#21035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/JDK/jdk-12.0.1/lib/src.zip!/java.base/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4546" selection-start-line="4546" selection-end-line="4546" />
-          <folding>
-            <element signature="e#102979#102980#0" expanded="true" />
-            <element signature="e#103043#103044#0" expanded="true" />
-            <element signature="e#179349#179350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/JDK/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ClienteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/UsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/UsuarioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/TokenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AutenticacaoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/interceptor/AutorizacaoInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/UsuarioRequisicaoCadastroDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/UsuarioRequisicaoLoginDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -932,50 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ClienteDAOImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/Sessao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Servicos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Endereco.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -993,102 +920,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ServicoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ClienteWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-            <element signature="e#1988#1989#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Barbearia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/FreelancerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/BarbeariaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/BarbeariaDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/BarbeariaDAOImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#67#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/BarbeariaWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/barbearia">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1135,16 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/BarbeariaRequisicaoCadastroDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/FreelancerWS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1164,48 +989,218 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/freelancer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/servicos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-          <filtering>
-            <filter text="" />
-          </filtering>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/FreelancerDAOImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/usuario_servicos">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6c01924e-4ec4-4e77-99d9-ae2dc00fecbe">
-          <filtering>
-            <filter text="" />
-          </filtering>
-          <column-attributes>
-            <column name="ctid" enabled="false" position="-1" />
-          </column-attributes>
+        <state projectRestartId="0d3fa4fd-66b5-49c9-90db-51ec6ffcdf12">
+          <filtering />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/FreelancerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
+        <state relative-caret-position="102">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/freelancer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0d3fa4fd-66b5-49c9-90db-51ec6ffcdf12">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/Sessao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/util/TipoUsuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Barbearia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/AgendamentoDAOImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/BarbeariaDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/AgendamentoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/BarbeariaDAOImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#67#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/BarbeariaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/util/Mensagem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/JDK/jdk-12.0.1/lib/src.zip!/java.base/java/util/function/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Servicos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/ClienteRequisicaoCadastroDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/usuario">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ServicoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/util/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/ClienteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ServicoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAOImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ClienteDAO.java">
@@ -1218,27 +1213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/FreelancerDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ClienteDAOImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/ServicoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/FreelancerDAOImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="276">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#0#67#1" expanded="true" />
@@ -1246,14 +1224,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dao/imp/ServicoDAOImp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/service/AgendamentoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="265">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/cliente">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/barbearia">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/servicos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9b59eceb-71ea-421f-8917-2e61099febe3/database/BSys/schema/public/table/agendamento">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="6669cac5-1f8f-4669-8c7b-c0481d38dcc2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/BarbeariaWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/ClienteWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/entidade/Agendamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/BarbeariaRequisicaoCadastroDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/ws/AgendamentoWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="22" column="106" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/bsys/usuario/dto/AgendamentoRequisicaoCadastroDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
