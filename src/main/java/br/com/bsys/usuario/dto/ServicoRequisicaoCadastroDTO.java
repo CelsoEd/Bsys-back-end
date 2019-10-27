@@ -12,6 +12,9 @@ import javax.validation.constraints.NotEmpty;
 public class ServicoRequisicaoCadastroDTO implements DTO<Servicos> {
 
     @NotEmpty
+    private String id;
+
+    @NotEmpty
     private String descricao;
 
     @NotEmpty

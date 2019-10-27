@@ -2,6 +2,7 @@ package br.com.bsys.usuario.ws;
 
 import br.com.bsys.usuario.dto.AgendamentoRequisicaoCadastroDTO;
 import br.com.bsys.usuario.service.AgendamentoService;
+import br.com.bsys.util.exception.InfraestruturaException;
 import br.com.bsys.util.exception.NotFoundException;
 
 import javax.ejb.EJB;
@@ -19,9 +20,9 @@ public class AgendamentoWS {
     private AgendamentoService agendamentoService;
 
     @POST
-    @Path("/cadastro/{idCliente}/{idServico}")
-    public Response novo(@PathParam("idCliente") String idCliente, @PathParam("idServico") int idServico, AgendamentoRequisicaoCadastroDTO agendamentoRequisicaoCadastroDTO) throws NotFoundException {
-        agendamentoService.cadastraAgendamento(idCliente,idServico,agendamentoRequisicaoCadastroDTO.paraObjeto());
+    @Path("/cadastro")
+    public Response novo(AgendamentoRequisicaoCadastroDTO agendamentoRequisicaoCadastroDTO) throws NotFoundException, InfraestruturaException {
+        agendamentoService.cadastraAgendamento(agendamentoRequisicaoCadastroDTO.getIdCliente(), agendamentoRequisicaoCadastroDTO.getIdServico(),agendamentoRequisicaoCadastroDTO.paraObjeto());
         return Response.ok().build();
     }
 }

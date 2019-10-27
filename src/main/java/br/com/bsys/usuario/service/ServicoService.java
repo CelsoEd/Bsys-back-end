@@ -33,6 +33,12 @@ public class ServicoService {
         servicoDAO.servicoBarbearia(servico);
     }
 
+//    public void novoServicoFreelancer(String id, Servicos servico) throws NotFoundException {
+//        Freelancer freelancer = freelancerService.consultaPorId(id);
+//        servico.setFreelancer(freelancer);
+//        servicoDAO.servicoBarbearia(servico);
+//    }
+
     public void novoServicoFreelancer(String id, Servicos servico) throws NotFoundException {
         Freelancer freelancer = freelancerService.consultaPorId(id);
         servico.setFreelancer(freelancer);

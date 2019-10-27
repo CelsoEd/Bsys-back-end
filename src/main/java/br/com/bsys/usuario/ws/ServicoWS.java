@@ -19,21 +19,20 @@ public class ServicoWS {
     private ServicoService servicoService;
 
     @POST
-    @Path("servico-barbearia/{id}")
+    @Path("servico-barbearia")
     public Response novoServicoBarbearia(
-            @PathParam("id") String id, ServicoRequisicaoCadastroDTO servicoRequisicaoCadastroDTO)
+            ServicoRequisicaoCadastroDTO servicoRequisicaoCadastroDTO)
             throws NotFoundException {
 
-        servicoService.novoServicoBarbearia(id,servicoRequisicaoCadastroDTO.paraObjeto());
+        servicoService.novoServicoBarbearia(servicoRequisicaoCadastroDTO.getId(),servicoRequisicaoCadastroDTO.paraObjeto());
         return Response.ok().build();
     }
     @POST
-    @Path("servico-freelancer/{id}")
-    public Response novoServicoFreelancer(
-            @PathParam("id") String id, ServicoRequisicaoCadastroDTO servicoRequisicaoCadastroDTO)
+    @Path("servico-freelancer")
+    public Response novoServicoFreelancer(ServicoRequisicaoCadastroDTO servicoRequisicaoCadastroDTO)
             throws NotFoundException {
 
-        servicoService.novoServicoFreelancer(id,servicoRequisicaoCadastroDTO.paraObjeto());
+        servicoService.novoServicoFreelancer(servicoRequisicaoCadastroDTO.getId(),servicoRequisicaoCadastroDTO.paraObjeto());
         return Response.ok().build();
     }
 }
