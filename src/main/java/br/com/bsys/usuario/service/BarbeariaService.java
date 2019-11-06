@@ -12,6 +12,7 @@ import br.com.bsys.util.exception.UnauthorizedException;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
 
 @Stateless
 public class BarbeariaService {
@@ -35,6 +36,15 @@ public class BarbeariaService {
     public Barbearia consultaPorId(String id) throws NotFoundException {
         return dao.consultaPorId(id).orElseThrow(() -> new NotFoundException(Mensagem.USUARIO_NAO_ENCONTRADO));
     }
+
+    public List<Barbearia> listarTodas() throws NotFoundException {
+        List<Barbearia> barbearias = dao.listarTodas();
+        if(barbearias.isEmpty()){
+            throw new NotFoundException(Mensagem.BARBEARIAS_NAO_CADASTRADAS);
+        }
+        return barbearias;
+    }
+
 
 //    public void novoServico(String id,Servicos servicos) throws NotFoundException {
 //        dao.insereServico((Barbearia) consultaPorId(id),servicos);

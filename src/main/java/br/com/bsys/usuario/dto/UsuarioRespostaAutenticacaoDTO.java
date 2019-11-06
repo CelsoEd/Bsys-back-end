@@ -6,6 +6,7 @@ import lombok.Getter;
 
 @Getter
 public class UsuarioRespostaAutenticacaoDTO {
+    private String id;
     private String nome;
     private String email;
     private String token;
@@ -13,6 +14,7 @@ public class UsuarioRespostaAutenticacaoDTO {
 
     public UsuarioRespostaAutenticacaoDTO(Usuario usuario, String token) {
         this.token = token;
+        this.id = usuario.getId();
         this.nome = usuario.getNome();
         this.email = usuario.getEmail();
         this.tipoUsuario = usuario.getTipoUsuario();

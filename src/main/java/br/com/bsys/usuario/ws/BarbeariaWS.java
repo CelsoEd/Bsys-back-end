@@ -48,10 +48,17 @@ public class BarbeariaWS {
     }
 
     @GET
+    @Path("/listar")
+    public Response buscarTodos() throws NotFoundException {
+        return Response.ok(barbeariaService.listarTodas()).build();
+    }
+
+    @GET
     @Autorizacao({TipoUsuario.CONVIDADO, TipoUsuario.ADMINISTRADOR, TipoUsuario.CLIENTE})
     public Response consultaUsuario() {
         return Response.ok().build();
     }
+
 
 
 }

@@ -10,6 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import java.util.List;
 import java.util.Optional;
 
 public class BarbeariaDAOImp implements BarbeariaDAO {
@@ -43,6 +44,11 @@ public class BarbeariaDAOImp implements BarbeariaDAO {
     @Override
     public Optional<Barbearia> consultaPorId(String id) {
         return Optional.ofNullable(entityManager.find(Barbearia.class, id));
+    }
+
+    @Override
+    public List<Barbearia> listarTodas() {
+        return entityManager.createQuery("select b from Barbearia b", Barbearia.class).getResultList();
     }
 
 }

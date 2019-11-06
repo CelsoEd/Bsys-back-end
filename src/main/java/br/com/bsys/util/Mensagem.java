@@ -6,6 +6,7 @@ public enum Mensagem {
     ESSE_RECURSO_NAO_EXISTE("Esse recurso não existe."),
     SERVICO_NAO_CADASTRADO("Esse serviço não está cadastrado"),
     USUARIO_NAO_ENCONTRADO("Usuário não encontrado."),
+    BARBEARIAS_NAO_CADASTRADAS("Não existe barbearia cadastrada"),
 
     ERRO_CONVERSAO_JSON ("Erro na conversão de JSON");
 

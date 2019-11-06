@@ -1,6 +1,7 @@
 package br.com.bsys.usuario.ws;
 
 import br.com.bsys.usuario.dto.ClienteRequisicaoCadastroDTO;
+import br.com.bsys.usuario.dto.ClienteRequisicaoConsultaDTO;
 import br.com.bsys.usuario.dto.UsuarioRequisicaoLoginDTO;
 import br.com.bsys.usuario.dto.UsuarioRespostaAutenticacaoDTO;
 import br.com.bsys.usuario.entidade.Cliente;
@@ -8,6 +9,7 @@ import br.com.bsys.usuario.interceptor.Autorizacao;
 import br.com.bsys.usuario.service.AutenticacaoService;
 import br.com.bsys.usuario.service.ClienteService;
 import br.com.bsys.usuario.util.TipoUsuario;
+import br.com.bsys.util.exception.NotFoundException;
 import br.com.bsys.util.exception.UnauthorizedException;
 
 import javax.ejb.EJB;
@@ -17,7 +19,6 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
-import java.awt.*;
 import java.security.NoSuchAlgorithmException;
 
 @Path("cliente")
@@ -45,6 +46,13 @@ public class ClienteWS {
                 .ok(usuario)
                 .header(HttpHeaders.AUTHORIZATION, usuario.getToken())
                 .build();
+    }
+
+    @GET
+    @Path("/consulta")
+    public Response consulta(ClienteRequisicaoConsultaDTO clienteRequisicaoConsultaDTO) throws NotFoundException {
+        Cliente cliente = clienteService.consultaPorId(clienteRequisicaoConsultaDTO.getId());
+        return Response.ok(cliente).build();
     }
 
     @GET
