@@ -34,4 +34,7 @@ public class UsuarioService {
         return dao.consultaPorId(id).orElseThrow(() -> new NotFoundException(Mensagem.USUARIO_NAO_ENCONTRADO));
     }
 
+    public void alteraUsuario(Usuario usuario){
+        dao.alteraUsuario(usuario);
+    }
 }

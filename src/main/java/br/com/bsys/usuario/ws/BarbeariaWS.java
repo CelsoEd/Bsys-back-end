@@ -2,6 +2,7 @@ package br.com.bsys.usuario.ws;
 
 import br.com.bsys.usuario.dto.BarbeariaRequisicaoCadastroDTO;
 import br.com.bsys.usuario.dto.ServicoRequisicaoCadastroDTO;
+import br.com.bsys.usuario.dto.UsuarioRequisicaoConsultaDTO;
 import br.com.bsys.usuario.entidade.Barbearia;
 import br.com.bsys.usuario.entidade.Usuario;
 import br.com.bsys.usuario.interceptor.Autorizacao;
@@ -44,6 +45,13 @@ public class BarbeariaWS {
     @Path("/consulta/{id}")
     public Response consulta(@PathParam("id") String id) throws NotFoundException {
         Barbearia barbearia = barbeariaService.consultaPorId(id);
+        return Response.ok(barbearia).build();
+    }
+
+    @GET
+    @Path("/consulta")
+    public Response consulta(UsuarioRequisicaoConsultaDTO usuarioRequisicaoConsultaDTO) throws NotFoundException {
+        Barbearia barbearia = barbeariaService.consultaPorId(usuarioRequisicaoConsultaDTO.getId());
         return Response.ok(barbearia).build();
     }
 

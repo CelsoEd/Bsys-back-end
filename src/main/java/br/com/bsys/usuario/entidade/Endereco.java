@@ -24,4 +24,10 @@ public class Endereco {
 
     @Column
     private String cidade;
+
+    @Column
+    private String logradouro;
+
+    @Column
+    private String bairro;
 }

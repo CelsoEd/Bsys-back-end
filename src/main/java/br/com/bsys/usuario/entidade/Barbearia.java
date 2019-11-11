@@ -22,17 +22,9 @@ public class Barbearia extends Usuario {
     @Column
     private String cnpj;
 
-    @Column
-    private String telefone;
-
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "barbearia")
     private List<Servicos> servicos;
 
-    public Barbearia(String id, String nome, String email, String senha, TipoUsuario tipoUsuario, Endereco endereco, String cnpj, String telefone) {
-        super(id, nome, email, senha, tipoUsuario, endereco);
-        this.cnpj = cnpj;
-        this.telefone = telefone;
-    }
 }
 
 

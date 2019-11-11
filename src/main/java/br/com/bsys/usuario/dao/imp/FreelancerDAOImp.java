@@ -10,6 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import java.util.List;
 import java.util.Optional;
 
 public class FreelancerDAOImp implements FreelancerDAO {
@@ -45,4 +46,8 @@ public class FreelancerDAOImp implements FreelancerDAO {
         return Optional.ofNullable(entityManager.find(Freelancer.class, id));
     }
 
+    @Override
+    public List<Freelancer> listarTodos() {
+        return entityManager.createQuery("select f from Freelancer f", Freelancer.class).getResultList();
+    }
 }

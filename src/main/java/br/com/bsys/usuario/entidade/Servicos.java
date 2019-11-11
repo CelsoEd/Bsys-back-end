@@ -20,6 +20,9 @@ public class Servicos {
     private int id;
 
     @Column
+    private String nome;
+
+    @Column
     private String descricao;
 
     @Column

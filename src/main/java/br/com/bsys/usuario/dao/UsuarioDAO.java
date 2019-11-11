@@ -12,4 +12,6 @@ public interface UsuarioDAO {
 
     Optional<Usuario> consultaPorId(String id);
 
+    void alteraUsuario(Usuario usuario);
+
 }

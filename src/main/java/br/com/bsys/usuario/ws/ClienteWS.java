@@ -1,7 +1,7 @@
 package br.com.bsys.usuario.ws;
 
 import br.com.bsys.usuario.dto.ClienteRequisicaoCadastroDTO;
-import br.com.bsys.usuario.dto.ClienteRequisicaoConsultaDTO;
+import br.com.bsys.usuario.dto.UsuarioRequisicaoConsultaDTO;
 import br.com.bsys.usuario.dto.UsuarioRequisicaoLoginDTO;
 import br.com.bsys.usuario.dto.UsuarioRespostaAutenticacaoDTO;
 import br.com.bsys.usuario.entidade.Cliente;
@@ -50,8 +50,8 @@ public class ClienteWS {
 
     @GET
     @Path("/consulta")
-    public Response consulta(ClienteRequisicaoConsultaDTO clienteRequisicaoConsultaDTO) throws NotFoundException {
-        Cliente cliente = clienteService.consultaPorId(clienteRequisicaoConsultaDTO.getId());
+    public Response consulta(UsuarioRequisicaoConsultaDTO usuarioRequisicaoConsultaDTO) throws NotFoundException {
+        Cliente cliente = clienteService.consultaPorId(usuarioRequisicaoConsultaDTO.getId());
         return Response.ok(cliente).build();
     }
 

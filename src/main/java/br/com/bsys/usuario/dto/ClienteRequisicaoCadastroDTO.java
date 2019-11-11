@@ -30,13 +30,21 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
 
     private String telefone;
 
+    private String telefone2;
+
+    private String descricaoPerfil;
+
     private String cep;
 
     private String numero;
 
     private String complemento;
 
-    private String uf;
+    private String logradouro;
+
+    private String bairro;
+
+    private String estado;
 
     private String cidade;
 
@@ -49,11 +57,15 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
         cliente.setSenha(this.senha);
         cliente.setCpf(this.cpf);
         cliente.setTelefone(this.telefone);
+        cliente.setTelefone2(this.telefone2);
+        cliente.setDescricaoPerfil(this.descricaoPerfil);
         endereco.setCep(this.cep);
         endereco.setCidade(this.cidade);
         endereco.setComplemento(this.complemento);
         endereco.setNumero(this.numero);
-        endereco.setUf(this.uf);
+        endereco.setUf(this.estado);
+        endereco.setLogradouro(this.logradouro);
+        endereco.setBairro(this.bairro);
         cliente.setEndereco(endereco);
         return cliente;
     }

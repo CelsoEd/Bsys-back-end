@@ -22,9 +22,6 @@ public class Cliente extends Usuario {
     @Column
     private String cpf;
 
-    @Column
-    private String telefone;
-
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "cliente")
     private List<Agendamento> agendamento;
 

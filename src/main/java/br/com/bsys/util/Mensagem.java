@@ -7,6 +7,7 @@ public enum Mensagem {
     SERVICO_NAO_CADASTRADO("Esse serviço não está cadastrado"),
     USUARIO_NAO_ENCONTRADO("Usuário não encontrado."),
     BARBEARIAS_NAO_CADASTRADAS("Não existe barbearia cadastrada"),
+    FREELANCERS_NAO_CADASTRADOS("Não existe freelancer cadastrado"),
 
     ERRO_CONVERSAO_JSON ("Erro na conversão de JSON");
 

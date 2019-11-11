@@ -41,4 +41,9 @@ public class UsuarioDAOImp implements UsuarioDAO {
     public Optional<Usuario> consultaPorId(String id) {
         return Optional.empty();
     }
+
+    @Override
+    public void alteraUsuario(Usuario usuario) {
+        entityManager.merge(usuario);
+    }
 }

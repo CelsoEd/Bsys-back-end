@@ -44,5 +44,9 @@ public class ServicoService {
         servico.setFreelancer(freelancer);
         servicoDAO.servicoBarbearia(servico);
     }
+
+    public void alteraServico(Servicos servico){
+        servicoDAO.alteraServico(servico);
+    }
 }
 

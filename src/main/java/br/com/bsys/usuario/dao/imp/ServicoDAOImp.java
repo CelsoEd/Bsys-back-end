@@ -24,7 +24,7 @@ public class ServicoDAOImp implements ServicoDAO {
 
     @Override
     public void alteraServico(Servicos servicos) {
-
+        entityManager.merge(servicos);
     }
 
 

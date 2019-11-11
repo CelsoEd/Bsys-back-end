@@ -32,6 +32,15 @@ public abstract class Usuario {
     @Column(nullable = true)
     private TipoUsuario tipoUsuario;
 
+    @Column
+    private String telefone;
+
+    @Column
+    private String telefone2;
+
+    @Column
+    private String descricaoPerfil;
+
     @Embedded
     private Endereco endereco;
 }

@@ -27,15 +27,24 @@ public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
 
     private String telefone;
 
+    private String telefone2;
+
+    private String descricaoPerfil;
+
     private String cep;
 
     private String numero;
 
     private String complemento;
 
-    private String uf;
+    private String estado;
 
     private String cidade;
+
+    private String logradouro;
+
+    private String bairro;
+
 
     @Override
     public Freelancer paraObjeto() {
@@ -45,12 +54,15 @@ public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
         freelancer.setSenha(this.senha);
         freelancer.setCpf(this.cpf);
         freelancer.setTelefone(this.telefone);
+        freelancer.setTelefone2(this.telefone2);
+        freelancer.setDescricaoPerfil(this.descricaoPerfil);
 
         Endereco endereco = new Endereco();
         endereco.setCep(this.cep);
         endereco.setNumero(this.numero);
         endereco.setComplemento(this.complemento);
-        endereco.setUf(this.uf);
+        endereco.setLogradouro(this.logradouro);
+        endereco.setBairro(this.bairro);
         endereco.setCidade(this.cidade);
 
         freelancer.setEndereco(endereco);
