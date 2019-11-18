@@ -2,6 +2,7 @@ package br.com.bsys.usuario.dao.imp;
 
 import br.com.bsys.usuario.dao.BarbeariaDAO;
 import br.com.bsys.usuario.entidade.Barbearia;
+import br.com.bsys.usuario.entidade.Freelancer;
 import br.com.bsys.usuario.util.TipoUsuario;
 import br.com.bsys.util.GerarIdFactory;
 
@@ -49,6 +50,11 @@ public class BarbeariaDAOImp implements BarbeariaDAO {
     @Override
     public List<Barbearia> listarTodas() {
         return entityManager.createQuery("select b from Barbearia b", Barbearia.class).getResultList();
+    }
+
+    @Override
+    public void alterar(Barbearia barbearia) {
+        entityManager.merge(barbearia);
     }
 
 }

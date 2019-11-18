@@ -14,5 +14,8 @@ public interface BarbeariaDAO {
 
     List<Barbearia> listarTodas();
 
+    void alterar(Barbearia barbearia);
+
+
 
 }

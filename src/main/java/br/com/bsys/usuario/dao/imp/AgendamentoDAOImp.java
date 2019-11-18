@@ -2,6 +2,7 @@ package br.com.bsys.usuario.dao.imp;
 
 import br.com.bsys.usuario.dao.AgendamentoDAO;
 import br.com.bsys.usuario.entidade.Agendamento;
+import br.com.bsys.usuario.util.Status;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -13,6 +14,7 @@ public class AgendamentoDAOImp implements AgendamentoDAO {
 
     @Override
     public void insere(Agendamento agendamento) {
-        entityManager.persist(agendamento);    
+        agendamento.setStatus(Status.SOLICITADO);
+        entityManager.persist(agendamento);
     }
 }

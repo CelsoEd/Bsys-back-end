@@ -12,4 +12,7 @@ public interface ClienteDAO {
 
     Optional<Cliente> consultaPorId(String id);
 
+    void alterar(Cliente cliente);
+
+
 }

@@ -50,4 +50,9 @@ public class FreelancerDAOImp implements FreelancerDAO {
     public List<Freelancer> listarTodos() {
         return entityManager.createQuery("select f from Freelancer f", Freelancer.class).getResultList();
     }
+
+    @Override
+    public void alterar(Freelancer freelancer) {
+        entityManager.merge(freelancer);
+    }
 }

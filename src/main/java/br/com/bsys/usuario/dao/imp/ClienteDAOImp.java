@@ -44,4 +44,10 @@ public class ClienteDAOImp implements ClienteDAO {
     public Optional<Cliente> consultaPorId(String id) {
         return  Optional.ofNullable(entityManager.find(Cliente.class, id));
     }
+
+    @Override
+    public void alterar(Cliente cliente)
+    {
+        entityManager.merge(cliente);
+    }
 }

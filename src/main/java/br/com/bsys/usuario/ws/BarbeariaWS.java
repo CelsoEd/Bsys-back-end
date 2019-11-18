@@ -48,7 +48,7 @@ public class BarbeariaWS {
         return Response.ok(barbearia).build();
     }
 
-    @GET
+    @POST
     @Path("/consulta")
     public Response consulta(UsuarioRequisicaoConsultaDTO usuarioRequisicaoConsultaDTO) throws NotFoundException {
         Barbearia barbearia = barbeariaService.consultaPorId(usuarioRequisicaoConsultaDTO.getId());
@@ -67,6 +67,14 @@ public class BarbeariaWS {
         return Response.ok().build();
     }
 
+    @PUT
+    @Path("update")
+    public Response atualizarServico(
+            BarbeariaRequisicaoCadastroDTO barbeariaRequisicaoCadastroDTO)
+            throws NotFoundException {
+        barbeariaService.alterar(barbeariaRequisicaoCadastroDTO.paraObjeto());
+        return Response.ok().build();
+    }
 
 
 }

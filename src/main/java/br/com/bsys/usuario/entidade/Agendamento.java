@@ -39,7 +39,6 @@ public class Agendamento {
         this.status = status;
     }
     public Agendamento(Status status){
-        this.dataHora = dataHora;
         this.status = status;
     }
 

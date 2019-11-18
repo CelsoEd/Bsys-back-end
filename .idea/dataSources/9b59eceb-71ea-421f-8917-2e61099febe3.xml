@@ -17,8 +17,8 @@
       <IntrospectionStateNumber>1322</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|42244|42246|1
-sequence|table|42287|42289|1
+      <Relations>sequence|table|42287|42289|1
+sequence|table|42244|42246|1
 </Relations>
     </database>
     <database id="4" parent="1" name="postgres">

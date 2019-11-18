@@ -14,6 +14,8 @@ import javax.validation.constraints.NotEmpty;
 @Setter
 public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
 
+    private String id;
+
     @NotEmpty
     private String nome;
 
@@ -23,6 +25,8 @@ public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
 
     @NotEmpty
     private String senha;
+
+    private TipoUsuario tipoUsuario;
 
     private String cnpj;
 
@@ -38,7 +42,7 @@ public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
 
     private String complemento;
 
-    private String estado;
+    private String uf;
 
     private String cidade;
 
@@ -49,6 +53,10 @@ public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
     @Override
     public Barbearia paraObjeto() {
         Barbearia barbearia = new Barbearia();
+
+        if (this.getId() != null){
+            barbearia.setId(this.id);
+        }
         barbearia.setNome(this.nome);
         barbearia.setEmail(this.email);
         barbearia.setSenha(this.senha);
@@ -56,12 +64,13 @@ public class BarbeariaRequisicaoCadastroDTO implements DTO<Barbearia> {
         barbearia.setTelefone(this.telefone);
         barbearia.setTelefone2(this.telefone2);
         barbearia.setDescricaoPerfil(this.descricaoPerfil);
+        barbearia.setTipoUsuario(this.tipoUsuario);
 
         Endereco endereco = new Endereco();
         endereco.setCep(this.cep);
         endereco.setNumero(this.numero);
         endereco.setComplemento(this.complemento);
-        endereco.setUf(this.estado);
+        endereco.setUf(this.uf);
         endereco.setLogradouro(this.logradouro);
         endereco.setBairro(this.bairro);
         endereco.setCidade(this.cidade);

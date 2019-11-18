@@ -46,6 +46,7 @@ public class ServicoService {
     }
 
     public void alteraServico(Servicos servico){
+
         servicoDAO.alteraServico(servico);
     }
 }

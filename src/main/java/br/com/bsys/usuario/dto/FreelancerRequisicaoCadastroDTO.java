@@ -2,6 +2,7 @@ package br.com.bsys.usuario.dto;
 
 import br.com.bsys.usuario.entidade.Endereco;
 import br.com.bsys.usuario.entidade.Freelancer;
+import br.com.bsys.usuario.util.TipoUsuario;
 import br.com.bsys.util.DTO;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +13,8 @@ import javax.validation.constraints.NotEmpty;
 @Getter
 @Setter
 public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
+
+    private String id;
 
     @NotEmpty
     private String nome;
@@ -29,7 +32,10 @@ public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
 
     private String telefone2;
 
+    private TipoUsuario tipoUsuario;
+
     private String descricaoPerfil;
+
 
     private String cep;
 
@@ -37,7 +43,7 @@ public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
 
     private String complemento;
 
-    private String estado;
+    private String uf;
 
     private String cidade;
 
@@ -49,6 +55,9 @@ public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
     @Override
     public Freelancer paraObjeto() {
         Freelancer freelancer = new Freelancer();
+        if (this.getId() != null){
+            freelancer.setId(this.id);
+        }
         freelancer.setNome(this.nome);
         freelancer.setEmail(this.email);
         freelancer.setSenha(this.senha);
@@ -56,6 +65,7 @@ public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
         freelancer.setTelefone(this.telefone);
         freelancer.setTelefone2(this.telefone2);
         freelancer.setDescricaoPerfil(this.descricaoPerfil);
+        freelancer.setTipoUsuario(this.tipoUsuario);
 
         Endereco endereco = new Endereco();
         endereco.setCep(this.cep);
@@ -64,6 +74,7 @@ public class FreelancerRequisicaoCadastroDTO implements DTO<Freelancer> {
         endereco.setLogradouro(this.logradouro);
         endereco.setBairro(this.bairro);
         endereco.setCidade(this.cidade);
+        endereco.setUf(this.uf);
 
         freelancer.setEndereco(endereco);
 

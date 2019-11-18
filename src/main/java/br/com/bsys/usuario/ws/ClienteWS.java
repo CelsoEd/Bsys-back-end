@@ -56,10 +56,23 @@ public class ClienteWS {
     }
 
     @GET
+    @Path("/consulta/{id}")
+    public Response consulta(@PathParam("id") String id) throws NotFoundException {
+        Cliente cliente = clienteService.consultaPorId(id);
+        return Response.ok(cliente).build();
+    }
+
+    @GET
     @Autorizacao({TipoUsuario.CONVIDADO, TipoUsuario.ADMINISTRADOR, TipoUsuario.CLIENTE})
     public Response consultaUsuario() {
         return Response.ok().build();
     }
 
+    @PUT
+    @Path("update")
+    public Response atualizarServico(ClienteRequisicaoCadastroDTO clienteRequisicaoCadastroDTO) {
+        clienteService.alterar(clienteRequisicaoCadastroDTO.paraObjeto());
+        return Response.ok().build();
+    }
 
 }

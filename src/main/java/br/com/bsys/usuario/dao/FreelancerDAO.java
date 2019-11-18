@@ -15,5 +15,5 @@ public interface FreelancerDAO {
 
     List<Freelancer> listarTodos();
 
-
+    void alterar(Freelancer freelancer);
 }

@@ -14,6 +14,8 @@ import javax.validation.constraints.NotEmpty;
 @Setter
 public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
 
+    private String id;
+
     @NotEmpty
     private String nome;
 
@@ -34,6 +36,8 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
 
     private String descricaoPerfil;
 
+    private Endereco endereco2;
+
     private String cep;
 
     private String numero;
@@ -44,14 +48,17 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
 
     private String bairro;
 
-    private String estado;
+    private String uf;
 
     private String cidade;
 
     @Override
     public Cliente paraObjeto() {
         Cliente cliente = new Cliente();
-        Endereco endereco = new Endereco();
+
+        if (this.getId() != null){
+            cliente.setId(this.id);
+        }
         cliente.setNome(this.nome);
         cliente.setEmail(this.email);
         cliente.setSenha(this.senha);
@@ -59,11 +66,14 @@ public class ClienteRequisicaoCadastroDTO implements DTO<Cliente> {
         cliente.setTelefone(this.telefone);
         cliente.setTelefone2(this.telefone2);
         cliente.setDescricaoPerfil(this.descricaoPerfil);
+        cliente.setTipoUsuario(this.tipoUsuario);
+
+        Endereco endereco = new Endereco();
         endereco.setCep(this.cep);
         endereco.setCidade(this.cidade);
         endereco.setComplemento(this.complemento);
         endereco.setNumero(this.numero);
-        endereco.setUf(this.estado);
+        endereco.setUf(this.uf);
         endereco.setLogradouro(this.logradouro);
         endereco.setBairro(this.bairro);
         cliente.setEndereco(endereco);

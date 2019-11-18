@@ -34,4 +34,8 @@ public class ClienteService {
         return dao.consultaPorId(id).orElseThrow(() -> new NotFoundException(Mensagem.USUARIO_NAO_ENCONTRADO));
     }
 
+    public void alterar(Cliente cliente){
+        dao.alterar(cliente);
+    }
+
 }

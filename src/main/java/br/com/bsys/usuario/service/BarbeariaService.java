@@ -45,6 +45,9 @@ public class BarbeariaService {
         return barbearias;
     }
 
+    public void alterar(Barbearia barbearia){
+        dao.alterar(barbearia);
+    }
 
 //    public void novoServico(String id,Servicos servicos) throws NotFoundException {
 //        dao.insereServico((Barbearia) consultaPorId(id),servicos);

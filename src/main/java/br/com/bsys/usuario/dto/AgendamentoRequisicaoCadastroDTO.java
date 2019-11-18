@@ -23,7 +23,6 @@ public class AgendamentoRequisicaoCadastroDTO implements DTO<Agendamento> {
     @NotEmpty
     private LocalDateTime dataHora;
 
-    @NotEmpty
     private Status status;
 
     @Override
@@ -31,7 +30,9 @@ public class AgendamentoRequisicaoCadastroDTO implements DTO<Agendamento> {
 
         Agendamento agendamento = new Agendamento();
         agendamento.setDataHora(dataHora);
-        agendamento.setStatus(this.status);
+        if (this.status != null) {
+            agendamento.setStatus(this.status);
+        }
         return agendamento;
     }
 }

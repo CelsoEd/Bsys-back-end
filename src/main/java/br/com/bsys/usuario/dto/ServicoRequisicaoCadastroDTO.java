@@ -47,4 +47,5 @@ public class ServicoRequisicaoCadastroDTO implements DTO<Servicos> {
         servicos.setValor(this.valor);
         return servicos;
     }
+
 }

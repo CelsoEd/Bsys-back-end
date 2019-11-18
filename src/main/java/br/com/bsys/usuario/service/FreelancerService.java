@@ -43,4 +43,8 @@ public class FreelancerService {
         return barbearias;
     }
 
+    public void alterar(Freelancer freelancer){
+        dao.alterar(freelancer);
+    }
+
 }

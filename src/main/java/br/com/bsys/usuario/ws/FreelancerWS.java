@@ -63,4 +63,13 @@ public class FreelancerWS {
         return Response.ok().build();
     }
 
+    @PUT
+    @Path("update")
+    public Response atualizarServico(
+            FreelancerRequisicaoCadastroDTO freelancerRequisicaoCadastroDTO)
+            throws NotFoundException {
+        freelancerService.alterar(freelancerRequisicaoCadastroDTO.paraObjeto());
+        return Response.ok().build();
+    }
+
 }
