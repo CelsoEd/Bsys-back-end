@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -35,6 +36,10 @@ public class Servicos {
     @JsonIgnore
     @ManyToOne
     private Freelancer freelancer;
+
+    @JsonIgnore
+    @OneToMany
+    private List<Agendamento> agendamento;
 
     public Servicos(String descricao, Double valor, Barbearia barbearia) {
         this.descricao = descricao;

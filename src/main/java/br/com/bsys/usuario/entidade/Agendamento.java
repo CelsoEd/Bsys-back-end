@@ -31,7 +31,7 @@ public class Agendamento {
     @ManyToOne
     private Cliente cliente;
 
-    @OneToOne
+    @ManyToOne
     private Servicos servicos;
 
     public Agendamento(LocalDateTime dataHora, Status status){
