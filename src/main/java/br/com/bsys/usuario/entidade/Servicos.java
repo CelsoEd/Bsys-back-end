@@ -37,8 +37,8 @@ public class Servicos {
     @ManyToOne
     private Freelancer freelancer;
 
+    @OneToMany(mappedBy = "servicos", fetch = FetchType.EAGER)
     @JsonIgnore
-    @OneToMany
     private List<Agendamento> agendamento;
 
     public Servicos(String descricao, Double valor, Barbearia barbearia) {
