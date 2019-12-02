@@ -6,4 +6,8 @@ public interface AgendamentoDAO {
 
     void insere(Agendamento agendamento);
 
+    void confirmar(int id);
+
+    void cancelar(int id);
+
 }

@@ -30,5 +30,13 @@ public class AgendamentoService {
         agendamentoDAO.insere(agendamento);
     }
 
+    public void confirmarAgendament(int id){
+        agendamentoDAO.confirmar(id);
+    }
+
+    public void cancelarAgendamento(int id){
+        agendamentoDAO.cancelar(id);
+    }
+
 
 }

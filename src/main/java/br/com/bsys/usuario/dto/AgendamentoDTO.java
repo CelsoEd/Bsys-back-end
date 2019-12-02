@@ -13,6 +13,8 @@ public class AgendamentoDTO {
 
     private int id;
 
+    private String idCliente;
+
     private LocalDateTime dataHora;
 
     private Status status;
@@ -21,6 +23,7 @@ public class AgendamentoDTO {
         this.id = agendamento.getId();
         this.dataHora = agendamento.getDataHora();
         this.status = agendamento.getStatus();
+        this.idCliente = agendamento.getCliente().getId();
     }
 
 }

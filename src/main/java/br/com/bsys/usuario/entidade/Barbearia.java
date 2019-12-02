@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -23,7 +24,7 @@ public class Barbearia extends Usuario {
     private String cnpj;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "barbearia")
-    private List<Servicos> servicos;
+    private Set<Servicos> servicos;
 
 }
 

@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Getter
@@ -15,6 +16,19 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Servicos {
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Servicos servicos = (Servicos) o;
+        return id == servicos.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

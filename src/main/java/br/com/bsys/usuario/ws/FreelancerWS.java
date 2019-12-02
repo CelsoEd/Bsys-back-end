@@ -1,5 +1,6 @@
 package br.com.bsys.usuario.ws;
 
+import br.com.bsys.usuario.dto.FreelancerDTO;
 import br.com.bsys.usuario.dto.FreelancerRequisicaoCadastroDTO;
 import br.com.bsys.usuario.dto.UsuarioRequisicaoConsultaDTO;
 import br.com.bsys.usuario.entidade.Freelancer;
@@ -41,14 +42,14 @@ public class FreelancerWS {
     @Path("/consulta/{id}")
     public Response consulta(@PathParam("id") String id) throws NotFoundException {
         Freelancer freelancer = freelancerService.consultaPorId(id);
-        return Response.ok(freelancer).build();
+        return Response.ok(new FreelancerDTO(freelancer)).build();
     }
 
     @GET
     @Path("/consulta")
     public Response consulta(UsuarioRequisicaoConsultaDTO usuarioRequisicaoConsultaDTO) throws NotFoundException {
         Freelancer freelancer = freelancerService.consultaPorId(usuarioRequisicaoConsultaDTO.getId());
-        return Response.ok(freelancer).build();
+        return Response.ok(new FreelancerDTO(freelancer)).build();
     }
 
     @GET

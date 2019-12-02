@@ -6,10 +6,7 @@ import br.com.bsys.util.exception.InfraestruturaException;
 import br.com.bsys.util.exception.NotFoundException;
 
 import javax.ejb.EJB;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -27,5 +24,21 @@ public class AgendamentoWS {
         agendamentoService.cadastraAgendamento(agendamentoRequisicaoCadastroDTO.getIdCliente(), agendamentoRequisicaoCadastroDTO.getIdServico(), agendamentoRequisicaoCadastroDTO.paraObjeto());
         return Response.ok().build();
     }
+
+    @POST
+    @Path("/confirmar/{id}")
+    public Response confirmar(@PathParam("id") int id) throws NotFoundException, InfraestruturaException {
+        agendamentoService.confirmarAgendament(id);
+        return Response.ok().build();
+    }
+
+    @POST
+    @Path("/cancelar/{id}")
+    public Response cancelar(@PathParam("id") int id) throws NotFoundException, InfraestruturaException {
+        agendamentoService.cancelarAgendamento(id);
+        return Response.ok().build();
+    }
+
+
 
 }
